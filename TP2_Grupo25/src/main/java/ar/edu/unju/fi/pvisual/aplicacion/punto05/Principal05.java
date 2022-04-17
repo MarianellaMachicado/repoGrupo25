@@ -10,15 +10,16 @@ public class Principal05 {
 		int salir = 1;
 		Muestra unmostrar = new Muestra();
 		
-		while (salir >= 0)
+		while (salir > 0 & salir <13)
 		{
-			System.out.println("Ingrese un numero");
+			System.out.print("Ingrese un numero: ");
 			int numero = entrada.nextInt();		
 			
-			unmostrar.mostrar_condicionalumno(numero);
+			unmostrar.mostrar_mesdelaño(numero);
 			salir = numero;
 		}
 		
+		System.out.println("Salio del programa");
 		entrada.close();
 
 	}

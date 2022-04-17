@@ -18,6 +18,38 @@ public class Muestra {
 		} while (resultado >= 160 );	
 	}
 	
+	public void mostrar_mesdelaño(int mes) {
+		
+		switch(mes) {
+		case 1:System.out.println("El numero " + mes + " corresponde al mes ENERO");
+				break;
+		case 2:System.out.println("El numero " + mes + " corresponde al mes FEBRERO");
+				break;
+		case 3:System.out.println("El numero " + mes + " corresponde al mes MARZO");
+				break;
+		case 4:System.out.println("El numero " + mes + " corresponde al mes ABRIL");
+				break;
+		case 5:System.out.println("El numero " + mes + " corresponde al mes MAYO");
+				break;
+		case 6:System.out.println("El numero " + mes + " corresponde al mes JUNIO");
+				break;
+		case 7:System.out.println("El numero " + mes + " corresponde al mes JULIO");
+				break;
+		case 8:System.out.println("El numero " + mes + " corresponde al mes AGOSTO");
+				break;
+		case 9:System.out.println("El numero " + mes + " corresponde al mes SEPTIEMBRE");
+				break;
+		case 10:System.out.println("El numero " + mes + " corresponde al mes OCTUBRE");
+				break;
+		case 11:System.out.println("El numero " + mes + " corresponde al mes NOVIEMBRE");
+				break;
+		case 12:System.out.println("El numero " + mes + " corresponde al mes DICIEMBRE");
+				break;
+		default:System.out.println("NO existe este mes");
+				 break;
+		}	
+	}	
+
 	public void mostrar_condicionalumno(int Numero) {
 		
 		switch(Numero) {

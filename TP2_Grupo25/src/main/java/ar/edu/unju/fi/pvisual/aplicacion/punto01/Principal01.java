@@ -7,9 +7,9 @@ public class Principal01 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner entrada = new Scanner(System.in);
-		System.out.println("Ingrese un numero");
-		
+		System.out.print("Ingrese un numero: ");
 		int numero = entrada.nextInt();		
+		
 		while (numero > 10 || numero < 0)
 		{
 			System.out.println("Ingrese un numero entre 0 y 10");

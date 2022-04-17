@@ -10,7 +10,7 @@ public class Factorial {
 			Numero--;
 		}
 		
-		System.out.println("El factorial es");
+		System.out.print("El factorial es: ");
 		System.out.println(resultado);
 	}
 

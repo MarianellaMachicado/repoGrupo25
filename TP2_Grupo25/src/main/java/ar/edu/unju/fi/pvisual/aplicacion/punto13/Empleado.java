@@ -1,8 +1,10 @@
 package ar.edu.unju.fi.pvisual.aplicacion.punto13;
 
+import java.time.LocalDate;
+
 public class Empleado {
 	private String Nombre;
-	private String Fecha_ingreso;
+	LocalDate Fecha_ingreso = LocalDate.of(2012,12,02);
 	private int Legajo;
 	private String Email;
 	private float Sueldo;
@@ -16,12 +18,7 @@ public class Empleado {
 	public void setNombre(String nombre) {
 		this.Nombre = nombre;
 	}
-	public String getFecha_ingreso() {
-		return Fecha_ingreso;
-	}
-	public void setFecha_ingreso(String fecha_ingreso) {
-		this.Fecha_ingreso = fecha_ingreso;
-	}
+	
 	public int getLegajo() {
 		return Legajo;
 	}

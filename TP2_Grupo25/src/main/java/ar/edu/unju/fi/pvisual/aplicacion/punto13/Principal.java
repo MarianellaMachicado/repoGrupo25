@@ -8,8 +8,7 @@ public class Principal {
        emp.setNombre("juan");
        System.out.println("Nombre: "+emp.getNombre());
        
-       emp.setFecha_ingreso("12/04/12");
-       System.out.println("Fecha de ingreso es: "+emp.getFecha_ingreso());
+       System.out.println("Fecha de ingreso es: "+emp.Fecha_ingreso);
        
        emp.setLegajo(4231);
        System.out.println("Legajo: "+emp.getLegajo());

@@ -3,58 +3,37 @@ package ar.edu.unju.fi.pvisual.aplicacion.punto13;
 import java.time.LocalDate;
 
 public class Empleado {
-	private String Nombre;
-	LocalDate Fecha_ingreso = LocalDate.of(2012,12,02);
-	private int Legajo;
-	private String Email;
-	private float Sueldo;
-	private float Horas_trabajadas;
+	private String nombre;
+	private LocalDate fechaIngreso;
+	private int legajo;
+	private String email;
+	private float sueldo;
+	private float horasTrabajadas;
 	
-	//Metodo getter mostramos el nombre
-	public String getNombre() {
-		return Nombre;
-	}
-	//Metodo setter Establesemos el nombre
-	public void setNombre(String nombre) {
-		this.Nombre = nombre;
+	public Empleado(String nombre, LocalDate fechaIngreso, int legajo, String email, int horasTrabajadas) {
+		this.legajo = legajo;
+		this.nombre = nombre;
+		this.fechaIngreso = fechaIngreso;
+		this.email = email;
+		this.horasTrabajadas = horasTrabajadas;
+		this.sueldo=sueldo();
 	}
 	
-	public int getLegajo() {
-		return Legajo;
+	@Override
+	public String toString() {
+		return "Empleado [nombre=" + nombre + ", fechaIngreso=" + fechaIngreso + ", legajo=" + legajo + ", email="
+				+ email + ", sueldo=" + sueldo + ", horasTrabajadas=" + horasTrabajadas + "]";
 	}
-	public void setLegajo(int legajo) {
-		Legajo = legajo;
-	}
-	public String getEmail() {
-		return Email;
-	}
-	public void setEmail(String email) {
-		Email = email;
-	}
-	public float getSueldo() {
-		return Sueldo;
-	}
-	public void setSueldo(float sueldo) {
-	float total_hs,horas_extra,total_extra,horas_sem,total_sueldo;
-         total_hs = sueldo;             
-    if (total_hs > 160 )
-       {
-          horas_extra = total_hs - 160;
-          horas_sem = 160 * 600;
-          total_extra = horas_extra * 650;
-          total_sueldo = horas_sem + total_extra;
-  
-         }
-else
-  total_sueldo = total_hs * 600;
-		this.Sueldo = total_sueldo;
-	}
-	public float getHoras_trabajadas() {
-		return Horas_trabajadas;
-	}
-	public void setHoras_trabajadas(float horas_trabajadas) {
-		this.Horas_trabajadas = horas_trabajadas;
-       
+	
+	public float sueldo() {
+		float total;
+		int primerasHoras=600*160;
+		
+		if(this.horasTrabajadas<=160)
+			total=600*this.horasTrabajadas;
+		else
+			total=primerasHoras+650*(this.horasTrabajadas-160);
+		return total;
 	}
 
 }

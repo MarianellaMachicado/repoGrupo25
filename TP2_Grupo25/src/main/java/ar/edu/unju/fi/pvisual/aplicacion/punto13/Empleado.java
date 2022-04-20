@@ -10,6 +10,37 @@ public class Empleado {
 	private float sueldo;
 	private float horasTrabajadas;
 	
+	//Constructores del punto 14
+	public Empleado() {
+		
+	}
+	
+	public Empleado(String nombre, int legajo, int horasTrabajadas) {
+		this.fechaIngreso = LocalDate.of(1900,1,1);
+		this.nombre = nombre;
+		this.legajo = legajo;
+		this.horasTrabajadas = horasTrabajadas;
+		this.sueldo=sueldo();
+	}
+	
+	public Empleado(String nombre, LocalDate fechaIngreso, int horasTrabajadas) {
+		this.legajo=-9999;
+		this.nombre = nombre;
+		this.fechaIngreso = fechaIngreso;
+		this.horasTrabajadas = horasTrabajadas;
+		this.sueldo=sueldo();
+	}
+	
+	public Empleado(String nombre, int horasTrabajadas) {
+		this.fechaIngreso = LocalDate.of(1900,1,1);
+		this.legajo=-9999;
+		this.nombre = nombre;
+		this.horasTrabajadas = horasTrabajadas;
+		this.sueldo=sueldo();
+	}
+
+
+	//Constructor usado en el punto 13
 	public Empleado(String nombre, LocalDate fechaIngreso, int legajo, String email, int horasTrabajadas) {
 		this.legajo = legajo;
 		this.nombre = nombre;

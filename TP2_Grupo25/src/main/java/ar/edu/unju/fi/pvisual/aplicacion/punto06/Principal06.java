@@ -5,34 +5,41 @@ import java.util.Scanner;
 public class Principal06 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
 		Scanner entrada = new Scanner(System.in);
-		int i = 2, num;
+		int i = 2;
 		
 		while(i>=1) {
-			System.out.print("Ingrese un Número entero del 1 - 10: ");
-			num = entrada.nextInt();
 			
-			if (num == 6) {
-				System.out.println("Alumno regulariza");
+			System.out.print(" \n Ingrese un Número entero del 1 - 10: ");
+			int num = entrada.nextInt();
+			
+			if (num > 10) {
+				num = 1;
 			}
 			else {
-				if (num >=7 && num <=10) {
-					System.out.println("El alumno promociona");
+				if (num == 6) {
+					System.out.println(" Alumno regulariza ");
 				}
 				else {
-					if (num <6 && num>=1) {
-						System.out.println("El alumno desaprueba");
+					if (num >=7 && num <=10) {
+						System.out.println(" El alumno promociona ");
 					}
 					else {
-						System.out.println("Valor no permitido");
-						i = 0;
+						if (num <6 && num >=1){
+							System.out.println(" El alumno desaprueba ");
+						}
+						else {
+							if (num <=0) {
+								System.out.println(" Valor no permitido ");
+								i = 0;
+							}
+						}
 					}
-
 				}
 			}
 		}
+		entrada.close();
 
 	}
 

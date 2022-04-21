@@ -3,16 +3,24 @@ package ar.edu.unju.fi.pvisual.aplicacion.punto07;
 public class Principal07 {
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		int j=41;
+		
+		int j = 40;
+		int aux = 3;
+		int k = j;
 
-        for(int i=39;i>=-39;i=i-2)
+        for(int i=2; i<=40; i++)
         {
-            j=j + i;
+        	if (j == 40) {
+        		j = j*2;
+        		System.out.print(j);
+        		System.out.print(" ");
+        	}
+        	j = j + k-aux;
             System.out.print(j);
-            System.out.print(" ");
-        }
-
+        	System.out.print(" ");
+        	aux = aux+2;
+        	
+        } 
 	}
 
 

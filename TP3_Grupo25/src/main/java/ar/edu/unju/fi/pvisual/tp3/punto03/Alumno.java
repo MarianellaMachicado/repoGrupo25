@@ -34,7 +34,17 @@ public class Alumno {
 		}
 		totalprom = promedio/5;
 		System.out.println("El promedio es: " +totalprom);
-		//return promedio;
+	}
+
+	public void obtenerNotaMaxima() {
+		double max=0;
+		
+		for(int i=0; i< notaalu.length;i++ ) {
+			if(max < notaalu[i]) {
+				max = notaalu[i];
+			}
+		}
+		System.out.println("La nota mas alta es: "+max);
 	}
 	
 	public String getNombre() {

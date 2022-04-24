@@ -31,8 +31,8 @@ public class Principal03 {
 		
 		System.out.println("Nombre y Apellido: "+unalumno.getNombre()+" "+unalumno.getApellido());
 		System.out.println("LU: "+ unalumno.getLu());
-		unalumno.calcularPromedio();
-		unalumno.obtenerNotaMaxima();
+		System.out.println("El promedio es: " +unalumno.calcularPromedio());
+		System.out.println("La nota mas alta es: " +unalumno.obtenerNotaMaxima());
 		entrada.close();
 	}
 

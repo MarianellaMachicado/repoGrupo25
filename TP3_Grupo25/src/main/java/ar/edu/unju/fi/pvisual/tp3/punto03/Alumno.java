@@ -24,7 +24,7 @@ public class Alumno {
 		}
 	}
 	
-	public void calcularPromedio() {
+	public double calcularPromedio() {
 		double promedio=0;
 		double totalprom = 0;
 		
@@ -33,10 +33,10 @@ public class Alumno {
 			promedio = promedio + notaalu[i];
 		}
 		totalprom = promedio/5;
-		System.out.println("El promedio es: " +totalprom);
+		return totalprom;
 	}
 
-	public void obtenerNotaMaxima() {
+	public double obtenerNotaMaxima() {
 		double max=0;
 		
 		for(int i=0; i< notaalu.length;i++ ) {
@@ -44,7 +44,7 @@ public class Alumno {
 				max = notaalu[i];
 			}
 		}
-		System.out.println("La nota mas alta es: "+max);
+		return max;
 	}
 	
 	public String getNombre() {

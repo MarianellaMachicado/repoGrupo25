@@ -6,11 +6,10 @@ public class Alumno {
 	private int lu;
 	private double[] notaalu;
 
-	public Alumno() {
-		
+	public Alumno() {	
 	}
 	
-	Alumno(String nombre, String apellido, int lu, double[] nota) {
+	public Alumno(String nombre, String apellido, int lu, double[] nota) {
 		super();
 		this.nombre = nombre;
 		this.apellido = apellido;
@@ -20,7 +19,7 @@ public class Alumno {
 
 	public void mostrar() {
 		for(int i=0; i< notaalu.length;i++ ) {
-			System.out.println(notaalu[i]);
+			System.out.print("Nota: "+notaalu[i]+" ");
 		}
 	}
 	
@@ -78,8 +77,5 @@ public class Alumno {
 	public void setNota(double[] nota) {
 		this.notaalu = nota;
 	}
-
-	
-	
 		
 }

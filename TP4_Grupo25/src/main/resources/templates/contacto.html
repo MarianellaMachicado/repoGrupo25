@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <meta charset="utf-8"> 
+      <title>contacto </title>
+     <style>
+       form{
+	width:25%;
+	box-shadow:0 0 6px 0 rgba(000,000,000, 0.7);
+	margin:0 0 6px 0 rgba(000,000,000, 0.7);;
+}
+     </style>
+</head>
+<body>
+     <header>
+              <h1> comensando con html5</h1>
+              <img src="../static/Imagenes/500px-HTML5_logo_and_wordmark.svg.png"/ alt="html5" width="200" height="200">
+              <nav>
+                 <ul>
+                     <li><a href="contacto.html">Inicio</a></li>
+                     <li><a href="agenda.html">Agenda</a></li>
+                     <li><a href="Beneficios_y_Becas.html">Beneficios y Becas</a></li>
+                     <li><a href="contactos.html">Contactanos</a></li>
+                 </ul>
+               </nav>
+        </header>
+        <form >
+             <lavel or="NyA">Nombre y apellido</lavel>
+             <input id="idNyA" type="text" name="NyA"/>
+             <br/><br/>
+             <lavel>Provincia</lavel>
+                  <select>
+                        <option value="Buenos Aires">Buenos Aires</option>
+                        <option value="Catamarca">Catamarca</option>
+                        <option value="Chaco">Chaco</option>
+                        <option value="Chubut">Chubut</option>
+                        <option value="Cordoba">Cordoba</option>
+                        <option value="Corrientes">Corrientes</option>
+                        <option value="Entre Rios">Entre Rios</option>
+                        <option value="Formosa">Formosa</option>
+                        <option value="Jujuy">Jujuy</option>
+                        <option value="La Pampa">La Pampa</option>
+                        <option value="La Rioja">La Rioja</option>
+                        <option value="Mendoza">Mendoza</option>
+                        <option value="Misiones">Misiones</option>
+                        <option value="Neuquen">Neuquen</option>
+                        <option value="Rio Negro">Rio Negro</option>
+                        <option value="Salta">Salta</option>
+                        <option value="San Juan">San Juan</option>
+                        <option value="San Luis">San Luis</option>
+                        <option value="Santa Cruz">Santa Cruz</option>
+                        <option value="Santa Fe">Santa Fe</option>
+                        <option value="Santiago del Estero">Santiago del Estero</option>
+                        <option value="Terra del Fuego">Terra del Fuego</option>
+                        <option value="Tucuman">Tucuman</option>
+                      
+                  </select>
+             <br/><br/>
+             <lavel>Telefono</lavel>
+             <input id="idtelefono"type="number" name="telefono"/>
+             <br/><br/>
+             <lavel>Correo Electronico</lavel>
+             <input id="idemail" type="email" name="email"/>
+             <br/><br/>
+             <label>Estado Civil</label>
+                 <br/>
+                  <input  id="idcasado" type="radio" value="casado" name="tipoestadocivil"/>
+                  <label for="idcasado">Casado</label>
+                  <br/>
+                  <input  id="idsoltero" type="radio" value="soltero" name="tipoestadocivil"/>
+                  <label for="idsoltero">Soltero</label>
+                  <br/>
+                  <input  id="idotro" type="radio" value="otro" name="tipoestadocivil"/>
+                  <label for="idotro">Otro</label>
+                  <br/>
+                  <lebel>Mensaje</lebel>
+                   <textarea id="idmensaje" name="mensaje" cols="20" rows="5"></textarea>
+                   <br/>
+              <button type="submit">Enviar datos</button>
+        </form>
+        <footer> 
+                <p>2022. Portal de Capacitación – Av. Gral. Manuel Belgrano 789 – Teléfono (388) 999999 S. S. de Jujuy República
+Argentina</p>
+        </footer>
+</body>
+</html>

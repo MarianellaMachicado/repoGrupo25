@@ -9,18 +9,14 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>ar.edu.unju.fi.pvisual</groupId>
-	<artifactId>TP4_Grupo25</artifactId>
+	<artifactId>TP2_Grupo25</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>TP4_Grupo25</name>
+	<name>TP2_Grupo25</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
 	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-thymeleaf</artifactId>
-		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
